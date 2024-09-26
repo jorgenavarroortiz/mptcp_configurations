@@ -1,0 +1,16 @@
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    eno1:
+      dhcp4: no
+      addresses:
+        - 33.3.3.33/24
+      optional: true
+  wifis:
+    wlx00ad2446489f:
+      dhcp4: yes
+      access-points:
+        "WIMUNET":
+          password: "XXXXXXXX"
+      optional: true

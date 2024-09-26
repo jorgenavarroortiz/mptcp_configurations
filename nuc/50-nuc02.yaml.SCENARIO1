@@ -1,0 +1,32 @@
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    enp89s0:
+      dhcp4: false
+      addresses:
+        - 33.3.3.1/24
+      optional: true
+  wifis:
+    wlx00ad244648c1:
+      dhcp4: true
+      access-points:
+        "WIMUNET":
+          password: "XXXXXXXX"
+      optional: true
+    wlo1:
+      dhcp4: false
+      addresses:
+        - 10.1.1.2/24
+      access-points:
+        "WIMUNET-AP02_5G\"\n priority=10\n# \"hack!":
+          password: "XXXXXXXX"
+      optional: true
+    wlxbc2228c6c661:
+      dhcp4: false
+      addresses:
+        - 10.1.1.1/24
+      access-points:
+        "WIMUNET-AP01_5G\"\n priority=10\n# \"hack!":
+          password: "XXXXXXXX"
+      optional: true
